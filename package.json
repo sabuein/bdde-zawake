@@ -1,0 +1,27 @@
+{
+  "name": "zawake-ps",
+  "version": "1.0.0",
+  "description": "A Ghost theme for Zawake Palestine project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabuein/zawake-ps.git"
+  },
+  "keywords": [
+    "ghost",
+    "theme",
+    "arabic",
+    "rtl",
+    "sweets",
+    "ecommerce"
+  ],
+  "author": {
+    "name": "Salaheddin AbuEin",
+    "email": "sabuein@zawake.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sabuein/zawake-ps/issues"
+  },
+  "homepage": "https://zawake.com/",
+  "readme": "https://github.com/sabuein/zawake-ps#readme"
+}
