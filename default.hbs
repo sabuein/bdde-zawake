@@ -6,14 +6,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+        <link rel="stylesheet" type="text/css" href="{{asset 'css/helpers.css'}}" />
         <link rel="stylesheet" type="text/css" href="{{asset 'css/screen.css'}}" />
         <script type="module" src="{{asset 'js/index.js'}}"></script>
+        {{{block "head_scripts"}}}
         {{ghost_head}}
     </head>
     <!-- default.hbs -->
-    <body class="{{body_class}}">
-        <header>
+    <body class="{{body_class}} flex column nowrap align-content-center justify-content-center align-items-center">
+        <header class="flex column nowrap align-content-center justify-content-center align-items-center">
             {{#if @site.logo}}
             <figure><a href="{{@site.url}}" title="{{@site.title}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a></figure>
             {{else}}
@@ -22,12 +23,13 @@
             {{/if}}
             <nav>{{navigation}}</nav>
         </header>
-        <div>{{{body}}}</div>
+        <main class="{{post_class}} flex row nowrap">{{{body}}}</main>
         <footer>
             <section>{{> "login"}}</section>
             <nav>{{navigation type="secondary"}}</nav>
+            <div><a href="/sitemap.xml" title="XML Sitemap">XML Sitemap</a></div>
         </footer>
-        {{{block "scripts"}}}
+        {{{block "foot_scripts"}}}
         {{ghost_foot}}
     </body>
 </html>

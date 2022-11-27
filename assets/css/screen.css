@@ -2,3 +2,45 @@
 .kg-width-full {
     border: .25rem solid red;
 }
+
+:root {
+    --main-bg-color: silver;
+    --second-bg-color: gold;
+}
+
+.nav {
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.home-template {
+    background-color: var(--second-bg-color);
+}
+
+.post {
+    width: 85%;
+    background-color: var(--main-bg-color)
+}
+
+.articles-container {
+    gap: 2rem;
+}
+
+.single-article {
+    text-align: center;
+    max-width: inherit;
+}
+
+.single-article-figure {
+    max-width: inherit;
+}
+
+.single-article-img {
+    border-radius: 1rem;
+    height: 12rem;
+    width: 100%;
+}
+
+.single-article-title {
+    
+}
