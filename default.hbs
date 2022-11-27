@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
         <link rel="stylesheet" type="text/css" href="{{asset 'css/screen.css'}}" />
-        <script type="text/javascript" src="{{asset 'js/index.js'}}"></script>
+        <script type="module" src="{{asset 'js/index.js'}}"></script>
         {{ghost_head}}
     </head>
     <!-- default.hbs -->
@@ -16,20 +17,17 @@
             {{#if @site.logo}}
             <figure><a href="{{@site.url}}" title="{{@site.title}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a></figure>
             {{else}}
-            <h1>{{@site.title}}</h1>
+            <h1><a href="{{@site.url}}" title="{{@site.title}}">{{@site.title}}</a></h1>
             <h2>{{@site.description}}</h2>
             {{/if}}
             <nav>{{navigation}}</nav>
         </header>
         <div>{{{body}}}</div>
         <footer>
-            {{#if @site.members_enabled}}
-            <a class="gh-head-button" href="#/portal/signup" data-portal="signup">{{t "Subscribe"}}</a>
-            <a class="gh-head-button" href="#/portal/signin" data-portal="signin">{{t "Login"}}</a>
-            <a class="gh-head-button" href="#/portal/account" data-portal="account">{{t "Account"}}</a>
-            {{/if}}
+            <section>{{> "login"}}</section>
             <nav>{{navigation type="secondary"}}</nav>
         </footer>
+        {{{block "scripts"}}}
         {{ghost_foot}}
     </body>
 </html>

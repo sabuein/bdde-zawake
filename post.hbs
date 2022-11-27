@@ -1,1 +1,31 @@
 {{!< default}}
+<!-- post.hbs -->
+<main class="{{post_class}}">
+    <section>
+        {{#primary_tag}}<a href="{{url}}">{{name}}</a>{{/primary_tag}}
+        {{#if featured}}<span>{{> "icons/fire"}} Featured</span>{{/if}}
+        <h2>{{title}}</h2>
+        {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
+        <ul>
+            {{#foreach authors}}
+            {{#if profile_image}}
+            <a href="{{url}}"><img src="{{img_url profile_image}}" alt="{{name}}" /></a>
+            {{else}}
+            <a href="{{url}}">{{> "icons/avatar"}}</a>
+            {{/if}}
+            {{/foreach}}
+        </ul>
+        <!-- h3>{{authors}}</h3 -->
+        <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+        {{#if reading_time}}<span>&bull;</span> {{reading_time}}</span>{{/if}}
+        {{#if feature_image}}
+        <figure>
+            <img src="{{img_url feature_image}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" />
+            {{#if feature_image_caption}}
+            <figcaption>{{feature_image_caption}}</figcaption>
+            {{/if}}
+        </figure>
+        {{/if}}
+    </section>
+    <section>{{content}}</section>
+</main>
