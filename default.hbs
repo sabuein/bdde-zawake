@@ -10,25 +10,24 @@
         <script type="text/javascript" src="{{asset 'js/index.js'}}"></script>
         {{ghost_head}}
     </head>
+    <!-- default.hbs -->
     <body class="{{body_class}}">
         <header>
-            <h2>أهلاً وسهلاً بكم في زواكي</h2>
-            <a href="{{@site.url}}">{{#if @site.logo}}<img src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}}">{{else}}{{@site.title}}{{/if}}</a>
+            {{#if @site.logo}}
+            <figure><a href="{{@site.url}}" title="{{@site.title}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a></figure>
+            {{else}}
+            <h1>{{@site.title}}</h1>
+            <h2>{{@site.description}}</h2>
+            {{/if}}
             <nav>{{navigation}}</nav>
         </header>
         <div>{{{body}}}</div>
         <footer>
-            {{#unless @site.members_enabled}}
-                {{#unless @member}}
-                    {{#unless @site.members_invite_only}}
-                        <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
-                    {{else}}
-                        <a class="gh-head-button" href="#/portal/signin" data-portal="signin">Login</a>
-                    {{/unless}}
-                {{else}}
-                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
-                {{/unless}}
-            {{/unless}}
+            {{#if @site.members_enabled}}
+            <a class="gh-head-button" href="#/portal/signup" data-portal="signup">{{t "Subscribe"}}</a>
+            <a class="gh-head-button" href="#/portal/signin" data-portal="signin">{{t "Login"}}</a>
+            <a class="gh-head-button" href="#/portal/account" data-portal="account">{{t "Account"}}</a>
+            {{/if}}
             <nav>{{navigation type="secondary"}}</nav>
         </footer>
         {{ghost_foot}}
