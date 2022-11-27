@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/sabuein/zawake-ps.git"
   },
+  "screenshots": {
+    "desktop": "assets/screenshot-desktop.jpg",
+    "mobile": "assets/screenshot-mobile.jpg"
+  },
   "keywords": [
     "ghost",
     "theme",
@@ -23,5 +27,9 @@
     "url": "https://github.com/sabuein/zawake-ps/issues"
   },
   "homepage": "https://zawake.com/",
-  "readme": "https://github.com/sabuein/zawake-ps#readme"
+  "readme": "https://github.com/sabuein/zawake-ps#readme",
+  "scripts": {
+    "upgrade": "./assets/labs/ghost.sh",
+    "zipit": "./assets/labs/zip.sh"
+  }
 }
