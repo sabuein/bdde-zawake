@@ -1,5 +1,20 @@
 {{!< default}}
 <!-- home.hbs -->
 <main class="{{post_class}}">
-    {{> "marhaba"}}
+    {{> "widget"}}
 </main>
+<section>
+    {{#get "posts" as |articles pages| include="tags,authors" filter="published_at:<='{{published_at}}'+id:-{{id}}" limit="all" order="published_at asc"}}
+    {{#foreach articles}}
+    <h2>{{title}}</h2>
+    {{/foreach}}
+    <div>{{pages.total}}</div>
+    {{else}}
+    <p class="error">{{error}}</p>
+    {{/get}}
+</section>
+<footer>
+    {{#if @site.comments_enabled}}
+    {{comment_count}}
+    {{/if}}
+</footer>
