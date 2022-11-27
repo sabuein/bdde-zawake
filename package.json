@@ -13,6 +13,7 @@
   "keywords": [
     "ghost",
     "theme",
+    "ghost-theme",
     "arabic",
     "rtl",
     "sweets",
@@ -29,7 +30,12 @@
   "homepage": "https://zawake.com/",
   "readme": "https://github.com/sabuein/zawake-ps#readme",
   "scripts": {
-    "upgrade": "./assets/labs/ghost.sh",
-    "zipit": "./assets/labs/zip.sh"
+    "upgrade": "./assets/labs/scripts/ghost.sh",
+    "zip": "./assets/labs/scripts/zip.sh",
+    "test": "./assets/labs/scripts/test.sh"
+  },
+  "config": {
+    "posts_per_page": 9,
+    "card_assets": true
   }
 }
