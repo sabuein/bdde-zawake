@@ -30,12 +30,15 @@
   "homepage": "https://zawake.com/",
   "readme": "https://github.com/sabuein/zawake-falastin#readme",
   "scripts": {
-    "upgrade": "./assets/labs/scripts/ghost.sh",
-    "zip": "./assets/labs/scripts/zip.sh",
-    "test": "./assets/labs/scripts/test.sh"
+    "ghost": "./assets/labs/scripts/ghost.sh",
+    "hash": "./assets/labs/scripts/hash.sh",
+    "test": "./assets/labs/scripts/test.sh",
+    "version": "./assets/labs/scripts/version.sh",
+    "zip": "./assets/labs/scripts/zip.sh"
   },
   "config": {
     "posts_per_page": 9,
-    "card_assets": true
+    "card_assets": true,
+    "image_sizes": {}
   }
 }
