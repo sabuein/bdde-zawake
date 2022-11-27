@@ -1,7 +1,7 @@
 {
   "name": "zawake-falastin",
-  "version": "1.0.0",
   "description": "A Ghost theme for Zawake Falastin project",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sabuein/zawake-falastin.git"
@@ -32,7 +32,7 @@
   "scripts": {
     "ghost": "./assets/labs/scripts/ghost.sh",
     "hash": "./assets/labs/scripts/hash.sh",
-    "test": "./assets/labs/scripts/test.sh",
+    "theme": "./assets/labs/scripts/theme.sh",
     "version": "./assets/labs/scripts/version.sh",
     "zip": "./assets/labs/scripts/zip.sh"
   },
