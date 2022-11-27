@@ -1,22 +1,41 @@
-<!DOCTYPE html lang="{{@site.locale}}" dir="rtl">
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>زواكي دوت كوم</title>
-    <link rel="stylesheet" type="text/css" href="{{asset 'css/screen.css'}}" />
-    <script type="text/javascript" src="{{asset 'js/index.js'}}"></script>
-    {{ghost_head}}
-</head>
-<body>
-    <header><h2>أهلاً وسهلاً بكم في زواكي</h2></header>
-    <main>
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" dir="rtl">
+    <head>
+        <title>{{meta_title}}</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="{{asset 'css/screen.css'}}" />
+        <script type="text/javascript" src="{{asset 'js/index.js'}}"></script>
+        {{ghost_head}}
+    </head>
+    <body class="{{body_class}}">
         <header>
-            <h2>هون رح تيجي المنتجات:</h2>
+            <h2>أهلاً وسهلاً بكم في زواكي</h2>
+            <a href="{{@site.url}}">{{#if @site.logo}}<img src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}}">{{else}}{{@site.title}}{{/if}}</a>
+            <nav>{{navigation}}</nav>
         </header>
-        <section>{{> "hello"}}</section>
-    </main>
-    <footer>{{ghost_foot}}</footer>
-</body>
+        <div>{{{body}}}</div>>
+            <header>
+                <h2>هون رح تيجي المنتجات:</h2>
+            </header>
+            <section>{{> "hello"}}</section>
+        </main>
+        <footer>
+            {{#unless @site.members_enabled}}
+                {{#unless @member}}
+                    {{#unless @site.members_invite_only}}
+                        <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                    {{else}}
+                        <a class="gh-head-button" href="#/portal/signin" data-portal="signin">Login</a>
+                    {{/unless}}
+                {{else}}
+                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
+                {{/unless}}
+            {{/unless}}
+            <nav>{{navigation type="secondary"}}</nav>
+        </footer>
+        {{ghost_foot}}
+    </body>
 </html>

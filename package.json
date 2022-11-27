@@ -1,10 +1,10 @@
 {
-  "name": "zawake-ps",
+  "name": "zawake-falastin",
   "version": "1.0.0",
-  "description": "A Ghost theme for Zawake Palestine project",
+  "description": "A Ghost theme for Zawake Falastin project",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabuein/zawake-ps.git"
+    "url": "git+https://github.com/sabuein/zawake-falastin.git"
   },
   "screenshots": {
     "desktop": "assets/screenshot-desktop.jpg",
@@ -25,10 +25,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sabuein/zawake-ps/issues"
+    "url": "https://github.com/sabuein/zawake-falastin/issues"
   },
   "homepage": "https://zawake.com/",
-  "readme": "https://github.com/sabuein/zawake-ps#readme",
+  "readme": "https://github.com/sabuein/zawake-falastin#readme",
   "scripts": {
     "upgrade": "./assets/labs/scripts/ghost.sh",
     "zip": "./assets/labs/scripts/zip.sh",
