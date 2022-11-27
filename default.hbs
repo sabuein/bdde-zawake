@@ -16,12 +16,7 @@
             <a href="{{@site.url}}">{{#if @site.logo}}<img src="{{@site.logo}}" alt="{{@site.title}}" title="{{@site.title}}">{{else}}{{@site.title}}{{/if}}</a>
             <nav>{{navigation}}</nav>
         </header>
-        <div>{{{body}}}</div>>
-            <header>
-                <h2>هون رح تيجي المنتجات:</h2>
-            </header>
-            <section>{{> "hello"}}</section>
-        </main>
+        <div>{{{body}}}</div>
         <footer>
             {{#unless @site.members_enabled}}
                 {{#unless @member}}
