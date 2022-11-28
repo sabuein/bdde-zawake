@@ -1,6 +1,6 @@
 # Zawake Falastin *i.e.* Sweets of (occupied) Palestine
 
-A theme for [Zawake][1], an e-commerce project between a brother (me) and his sister (Hanan).
+A Ghost theme for [Zawake][1] project, an e-commerce venture between a brother (myself) and his sister (Hanan).
 
 ## Testing theme compatibility with the latest version of Ghost...
 

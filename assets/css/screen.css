@@ -1,13 +1,3 @@
-.kg-width-wide,
-.kg-width-full {
-    border: .25rem solid red;
-}
-
-:root {
-    --main-bg-color: silver;
-    --second-bg-color: gold;
-}
-
 .nav {
     list-style-type: none;
     gap: 2rem;
@@ -15,32 +5,94 @@
 
 .home-template {
     background-color: var(--second-bg-color);
-}
-
-.post {
-    width: 85%;
-    background-color: var(--main-bg-color)
-}
-
-.articles-container {
-    gap: 2rem;
-}
-
-.single-article {
+    max-width: 100%;
     text-align: center;
+}
+
+.sign-post {
+    flex: 1 0 20%;
+}
+
+.shelves-post {
+    flex: 1 0 60%;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: var(--main-bg-color);
+    font-family: var(--font-general), var(--font-default);
+    overflow: hidden;
+    overflow-x: scroll;
+    cursor:grab;
+}
+
+.goodbye-post {
+    flex: 1 0 20%;
+}
+
+.shelf-item {
+    flex: 0 0 40%;
+    padding: .75rem;
+    border-radius: var(--curve-radius);
+    background-color: var(--grey-bg);
+    font-family: var(--font-special), var(--font-default);
+}
+
+.item-figure {
     max-width: inherit;
 }
 
-.single-article-figure {
-    max-width: inherit;
-}
-
-.single-article-img {
-    border-radius: 1rem;
+.item-img {
+    border-radius: var(--curve-radius);
     height: 12rem;
     width: 100%;
 }
 
-.single-article-title {
-    
+.item-title {
+    margin: .75rem;
+}
+
+.item-text {
+    padding: 1rem;
+}
+
+.item-cta > * {
+    padding: 1rem;
+}
+
+.item-cta button {
+    border-radius: var(--curve-radius);
+}
+
+.empty-shelves {
+
+}
+
+/* Ghost core classes */
+
+.kg-width-wide,
+.kg-width-full {
+    border: .25rem solid red !important;
+}
+
+.gh-portal-triggerbtn-iframe {
+    right: unset !important;
+    left: 0 !important;
+}
+
+/* Snipcart */
+
+.snipcart-trigger-aside {
+    user-select: none;
+    z-index: 3999995;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    animation: 250ms ease 0s 1 normal none running animation-bhegco;
+    transition: opacity 0.3s ease 0s;
+    overflow: hidden;
+    cursor:pointer;
+    background-color: var(--brand-color);
+    border-radius: var(--brand-radius);
+    height: var(--brand-height);
+    min-width: var(--brand-width);
+    padding: 10px 28px 0 17px;
 }

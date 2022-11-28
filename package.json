@@ -1,6 +1,6 @@
 {
   "name": "zawake-falastin",
-  "description": "A Ghost theme for Zawake Falastin project",
+  "description": "A Ghost theme for Zawake project, an e-commerce venture between a brother (myself) and his sister (Hanan)",
   "version": "1.0.0",
   "repository": {
     "type": "git",
@@ -29,16 +29,17 @@
   },
   "homepage": "https://zawake.com/",
   "readme": "https://github.com/sabuein/zawake-falastin#readme",
-  "scripts": {
-    "ghost": "./assets/labs/scripts/ghost.sh",
-    "hash": "./assets/labs/scripts/hash.sh",
-    "theme": "./assets/labs/scripts/theme.sh",
-    "version": "./assets/labs/scripts/version.sh",
-    "zip": "./assets/labs/scripts/zip.sh"
-  },
   "config": {
     "posts_per_page": 9,
     "card_assets": true,
     "image_sizes": {}
+  },
+  "scripts": {
+    "ghost": "./assets/labs/scripts/ghost.sh",
+    "restart": "./assets/labs/scripts/restart.sh",
+    "hash": "./assets/labs/scripts/hash.sh",
+    "theme": "./assets/labs/scripts/theme.sh",
+    "version": "./assets/labs/scripts/version.sh",
+    "zip": "./assets/labs/scripts/zip.sh"
   }
 }

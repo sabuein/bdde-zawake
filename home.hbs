@@ -1,34 +1,10 @@
 {{!< default}}
 <!-- home.hbs -->
 {{#is "home"}}
-<header><h1>{{@site.title}}</h1></header>
-{{#get "posts" include="tags,authors" as |post|}}
-<section class="articles-container flex row wrap align-content-center justify-content-center align-items-center">
-    {{#foreach post}}
-    <article class="single-article">
-        <figure class="single-article-figure"><img src="{{img_url feature_image}}" class="single-article-img" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" title="{{title}}" /></figure>
-        <h2 class="single-article-title"><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
-        {{#if custom_excerpt}}<p class="single-article-text">{{custom_excerpt}}</p>{{/if}}
-        <div class="single-article-cta">{{> "item-button" item_price=tags.[1].slug}}</div>
-    </article>
-    {{/foreach}}
-</section>
-{{else}}
-<p class="error">{{error}}</p>
-{{/get}}
-<footer>
-    {{#if comments}}
-    <section>{{comments}}</section>
-    {{/if}}
-    <section class="snipcart-summary">
-        <div>Number of items: <span class="snipcart-item-quantity"></span>Total price: <span class="snipcart-total-price"></span></div>
-        <div><a href="#" class="snipcart-checkout">Click here to checkout</a></div>
-    </section>
+<header class="sign-{{post_class}}"><h1>{{@site.title}}</h1></header>
+<section class="shelves-{{post_class}} flex row nowrap align-content-center justify-content-center align-items-center">{{> "elvatrina"}}</section>
+<footer class="goodbye-{{post_class}}">{{#if comments}}<section>{{comments}}</section>{{/if}}<section class="snipcart-summary"><div>Number of items: <span class="snipcart-cart-header__count"></span>Total price: <span class="snipcart-total-price"></span></div><div><a href="#" class="snipcart-checkout">Click here to checkout</a></div></section>
 </footer>
-{{#contentFor "head_scripts"}}
-<script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-{{/contentFor}}
-{{#contentFor "foot_scripts"}}
-<div id="snipcart" data-api-key="MmQ4N2U1YTUtYmVjNi00MWI5LTg4NWMtZDY0ZTM4ZmFiZDAxNjM4MDUwMDY0OTc5NDQ5NTA2" data-config-add-product-behavior="side" hidden></div>
-{{/contentFor}}
+{{#contentFor "head_scripts"}}{{/contentFor}}
+{{#contentFor "foot_scripts"}}{{/contentFor}}
 {{/is}}
