@@ -1,4 +1,4 @@
 {{#if item_price}}
-<div title="{{t "Price"}}: {{item_price}} {{t "Israeli Shekel"}}">{{t "Price"}}: {{item_price}}&#8362;</div>
-<div><button class="snipcart-add-item" data-item-id="{{id}}" data-item-url="{{url absolute='true'}}" data-item-name="{{title}}" data-item-image="{{feature_image}}" data-item-description="{{excerpt}}" data-item-price="{{item_price}}" title="{{t "Add to cart"}}">{{t "Add to cart"}}</button></div>
+<div class="item-cta-price" title="{{t "Price"}}: {{item_price}} {{t "Israeli Shekel"}}">{{t "Price"}}: {{item_price}}&#8362;</div>
+<div class="item-cta-button"><button class="snipcart-add-item" data-item-id="{{id}}" data-item-url="{{url absolute='true'}}" data-item-name="{{title}}" data-item-image="{{feature_image}}" data-item-description="{{excerpt}}" data-item-price="{{item_price}}" title="{{t "Add to cart"}}">{{t "Add to cart"}}</button></div>
 {{/if}}

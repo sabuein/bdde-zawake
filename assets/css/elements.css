@@ -7,8 +7,21 @@
     /* Colors */
     --grey-bg: #f5f5f5;
     --main-bg-color: silver;
-    --second-bg-color: gold;
+    --second-bg-color: #f2f3f4;
     --brand-color: #ff1a75;
+    /* Resource https://htmlcolorcodes.com/color-picker/ */
+    --harmonies-one: #ecf0f1;
+    --harmonies-two: #4490ff;
+    --harmonies-three: #5644ff;
+    --harmonies-four: #b344ff;
+    --harmonies-five: #ff44ed;
+    --harmonies-six: #f8f9f9;
+    --powder-blue: #b6d0e2;
+    --pastel-blue: #a7c7e7;
+    --light-blue: #add8e6;
+    --btn-four: #07485d;
+    --a-vanilla: #f3e5ab;
+    --a-peach: #ffe5b4;
     /* Setting */
     --curve-radius: 1rem;
     --brand-radius: 50%;
@@ -16,11 +29,35 @@
     --brand-width: 3.75rem;
 }
 
-*, html, body {
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-general), var(--font-default);
     font-size: var(--font-size);
+}
+
+body {
+    background-color: var(--second-bg-color);   
+}
+
+a:link,
+a:visited {
+    border-bottom: thin dotted var(--harmonies-four);
+    text-decoration: none;
+    color: var(--harmonies-three);
+    color: var(--a-vanilla);
+}
+
+a:hover {
+    border: none;
+    color: var(--harmonies-two);
+    color: var(--a-peach);
+}
+
+a:active {
+    color: var(--harmonies-four);
 }
