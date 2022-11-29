@@ -10,14 +10,24 @@
 
 .sign-post {}
 
+.shelves-post::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+}
+
 .shelves-post {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow: hidden;
+    overflow-x: scroll;
+    flex-basis: 45rem;
     padding: 1rem;
     border-radius: var(--curve-radius);
     width: 100%;
     gap: 2rem;
     font-family: var(--font-general), var(--font-default);
-    overflow: hidden;
-    overflow-x: scroll;
     cursor: grab;
 }
 
@@ -31,7 +41,12 @@
     flex: 0 0 20rem;
     padding: .75rem;
     border-radius: var(--curve-radius);
+    border-bottom-left-radius: unset;
+    border-top-right-radius: unset;
     font-family: var(--font-special), var(--font-default);
+    opacity: .1;
+    scale: 1;
+    transition: .333s ease-in-out 0s opacity, scale;
 }
 
 .shelf-item:nth-child(odd) {
@@ -43,18 +58,23 @@
 }
 
 .shelf-item:hover {
-    box-shadow: 0 0 0.5rem 0 #AEB6BF;
+    box-shadow: 0 0 0.5rem 0 #aeb6bf;
+    opacity: 1;
+    scale: 1.1;
 }
 
 .item-figure {
-    cursor: default;
+    cursor: pointer;
     max-width: inherit;
 }
 
 .item-img {
-    border-radius: var(--curve-radius);
     max-height: 16rem;
     width: 100%;
+    border-radius: var(--curve-radius);
+    border-bottom-left-radius: unset;
+    border-top-right-radius: unset;
+    box-shadow: 0 0 0.5rem 0 #646464;
 }
 
 .item-title,
@@ -102,6 +122,17 @@
     height: var(--brand-height);
     min-width: var(--brand-width);
     margin: 0 1.25rem 1.75rem 0;
+    box-shadow: 0 0 .25rem 0 #646464;
+    text-align: center;
+}
+
+.snipcart-trigger-aside svg {
+    margin-top: 1rem;
+    width: 1.5rem;
+}
+
+.snipcart-trigger-aside svg path {
+    fill: #ffffff;
 }
 
 .snipcart__icon {
@@ -111,10 +142,13 @@
 .snipcart-add-item {
     user-select: none;
     padding: .5rem 1rem;
-    border-radius: var(--curve-radius);
     cursor: pointer;
     color: var(--btn-four);
     background-color: var(--powder-blue);
+    border: none;
+    border-radius: var(--curve-radius);
+    border-top-left-radius: unset;
+    border-bottom-right-radius: unset;
 }
 
 .snipcart-add-item:hover {
@@ -123,4 +157,8 @@
 
 .snipcart-add-item:active {
     background-color: var(--light-blue);
+}
+
+.shelf-item:hover .snipcart-add-item {
+    box-shadow: 0 0 0.5rem 0 #aeb6bf;
 }

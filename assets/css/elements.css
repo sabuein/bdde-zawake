@@ -41,21 +41,21 @@ body {
 }
 
 body {
-    background-color: var(--second-bg-color);   
+    background-color: var(--second-bg-color);
 }
 
 a:link,
 a:visited {
-    border-bottom: thin dotted var(--harmonies-four);
     text-decoration: none;
     color: var(--harmonies-three);
     color: var(--a-vanilla);
+    color: var(--harmonies-four);
 }
 
 a:hover {
-    border: none;
     color: var(--harmonies-two);
     color: var(--a-peach);
+    color: var(--harmonies-four);
 }
 
 a:active {
