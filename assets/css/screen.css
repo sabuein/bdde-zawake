@@ -10,32 +10,49 @@
 
 .sign-post {}
 
-.shelves-post::-webkit-scrollbar {
+.shelves-post {
+    flex-basis: 45rem;
+    gap: 5rem;
+    padding: 1rem;
+    border-radius: var(--curve-radius);
+    width: 100%;
+    font-family: var(--font-general), var(--font-default);
+}
+
+.goodbye-post {}
+
+.shelf-title {
+    flex: 1 0 5rem;
+    user-select: none;
+    cursor: default;
+}
+
+.shelf-title h2 {
+    padding-bottom: .75rem;
+    font-size: 2.5rem;
+}
+
+.shelf-content::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari and Opera */
 }
 
-.shelves-post {
+.shelf-content {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
     overflow: hidden;
     overflow-x: scroll;
-    flex-basis: 45rem;
-    padding: 1rem;
-    border-radius: var(--curve-radius);
+    height: 70vh;
     width: 100%;
-    gap: 2rem;
-    font-family: var(--font-general), var(--font-default);
+    gap: 3rem;
     cursor: grab;
 }
 
-.shelves-post:active {
+.shelf-content:active {
     cursor: grabbing;
 }
-
-.goodbye-post {}
 
 .shelf-item {
     flex: 0 0 20rem;
@@ -49,12 +66,24 @@
     transition: .333s ease-in-out 0s opacity, scale;
 }
 
+.shelf-item:first-child {
+    margin-right: 2rem;
+}
+
+.shelf-item:last-child {
+    margin-left: 2rem;
+}
+
 .shelf-item:nth-child(odd) {
     background-color: var(--harmonies-one);
 }
 
 .shelf-item:nth-child(even) {
     background-color: var(--harmonies-six);
+}
+
+.shelf-item:nth-child(even + n) {
+    background-color: red;
 }
 
 .shelf-item:hover {
