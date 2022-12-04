@@ -36,6 +36,7 @@
   },
   "scripts": {
     "ghost": "./assets/labs/scripts/ghost.sh",
+    "start": "./assets/labs/scripts/start.sh",
     "restart": "./assets/labs/scripts/restart.sh",
     "hash": "./assets/labs/scripts/hash.sh",
     "theme": "./assets/labs/scripts/theme.sh",

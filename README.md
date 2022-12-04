@@ -86,6 +86,10 @@ Checking theme compatibility...
 ✓ Your theme is compatible with Ghost 5.x
 ```
 
+## Links
+
+- [google-webfonts-helper][fonts], A Hassle-Free Way to Self-Host Google Fonts
+
 # To be continued...
 
 Thank you!
@@ -95,3 +99,4 @@ Peace and love,
 Salah.
 
 [1]: https://zawake.com/ "زواكي - حلويات من المطبخ إلى الفم مباشرة"
+[fonts]: https://gwfh.mranftl.com/fonts "google webfonts helper"

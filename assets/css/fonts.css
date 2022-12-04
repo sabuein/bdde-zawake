@@ -1,0 +1,439 @@
+/* cairo-play-200 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/cairo-play-v6-arabic-200.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-200.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-200.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-200.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-200.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-200.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-300 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/cairo-play-v6-arabic-300.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-300.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-300.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-300.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-300.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-300.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-regular - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/cairo-play-v6-arabic-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-regular.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-500 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/cairo-play-v6-arabic-500.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-500.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-500.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-500.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-600 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/cairo-play-v6-arabic-600.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-600.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-600.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-600.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-600.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-600.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-700 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/cairo-play-v6-arabic-700.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-700.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-700.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-700.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-700.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-800 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/cairo-play-v6-arabic-800.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-800.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-800.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-800.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-800.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-800.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* cairo-play-900 - arabic */
+@font-face {
+    font-family: 'Cairo Play';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/cairo-play-v6-arabic-900.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-900.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-900.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-900.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-900.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-900.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-100 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-100.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-100.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-100.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-100.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-100.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-100.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-200 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-200.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-200.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-200.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-200.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-200.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-200.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-300 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-300.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-300.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-300.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-300.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-300.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-300.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-regular - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-regular.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-500 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-500.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-500.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-500.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-500.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-600 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-600.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-600.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-600.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-600.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-600.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-600.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-700 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-700.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-700.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-700.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-700.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-700.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-800 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-800.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-800.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-800.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-800.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-800.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-800.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-sans-arabic-900 - arabic */
+@font-face {
+    font-family: 'Noto Sans Arabic';
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/noto-sans-arabic-v18-arabic-900.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-sans-arabic-v18-arabic-900.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-sans-arabic-v18-arabic-900.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-900.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-sans-arabic-v18-arabic-900.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-sans-arabic-v18-arabic-900.svg#NotoSansArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-naskh-arabic-regular - arabic */
+@font-face {
+    font-family: 'Noto Naskh Arabic';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/noto-naskh-arabic-v18-arabic-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-naskh-arabic-v18-arabic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-naskh-arabic-v18-arabic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-naskh-arabic-v18-arabic-regular.svg#NotoNaskhArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-naskh-arabic-500 - arabic */
+@font-face {
+    font-family: 'Noto Naskh Arabic';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/noto-naskh-arabic-v18-arabic-500.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-naskh-arabic-v18-arabic-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-naskh-arabic-v18-arabic-500.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-500.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-naskh-arabic-v18-arabic-500.svg#NotoNaskhArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-naskh-arabic-600 - arabic */
+@font-face {
+    font-family: 'Noto Naskh Arabic';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/noto-naskh-arabic-v18-arabic-600.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-naskh-arabic-v18-arabic-600.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-naskh-arabic-v18-arabic-600.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-600.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-600.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-naskh-arabic-v18-arabic-600.svg#NotoNaskhArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* noto-naskh-arabic-700 - arabic */
+@font-face {
+    font-family: 'Noto Naskh Arabic';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/noto-naskh-arabic-v18-arabic-700.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/noto-naskh-arabic-v18-arabic-700.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/noto-naskh-arabic-v18-arabic-700.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-700.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/noto-naskh-arabic-v18-arabic-700.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/noto-naskh-arabic-v18-arabic-700.svg#NotoNaskhArabic") format("svg");
+    /* Legacy iOS */
+}
+
+/* lalezar-regular - arabic */
+@font-face {
+    font-family: 'Lalezar';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/lalezar-v14-arabic-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/lalezar-v14-arabic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/lalezar-v14-arabic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/lalezar-v14-arabic-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/lalezar-v14-arabic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/lalezar-v14-arabic-regular.svg#Lalezar") format("svg");
+    /* Legacy iOS */
+}

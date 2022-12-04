@@ -25,6 +25,22 @@
     flex: 1 0 5rem;
     user-select: none;
     cursor: default;
+    font-family: var(--font-special);
+}
+
+.arrows {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--colors-four);
+}
+
+.arrows:hover {
+    color: var(--colors-three);
+}
+
+.arrows:active {
+    color: var(--colors-one);
 }
 
 .shelf-title h2 {
@@ -56,40 +72,35 @@
 
 .shelf-item {
     flex: 0 0 20rem;
-    padding: .75rem;
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
-    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
     font-family: var(--font-special), var(--font-default);
-    opacity: .1;
+    cursor: default;
+    box-shadow: none;
     scale: 1;
-    transition: .333s ease-in-out 0s opacity, scale;
+    transition: .333s ease-in-out 0s boxShadow, scale;
 }
 
 .shelf-item:first-child {
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .shelf-item:last-child {
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 .shelf-item:nth-child(odd) {
-    background-color: var(--harmonies-one);
+    background-color: var(--colors-three-op);
 }
 
 .shelf-item:nth-child(even) {
-    background-color: var(--harmonies-six);
-}
-
-.shelf-item:nth-child(even + n) {
-    background-color: red;
+    background-color: var(--colors-four-op);
 }
 
 .shelf-item:hover {
-    box-shadow: 0 0 0.5rem 0 #aeb6bf;
-    opacity: 1;
-    scale: 1.1;
+    box-shadow: 0 0 2rem 0 var(--colors-one-op);
+    scale: 1.01;
 }
 
 .item-figure {
@@ -98,12 +109,13 @@
 }
 
 .item-img {
-    max-height: 16rem;
+    height: 100%;
+    max-height: 15rem;
     width: 100%;
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
-    border-top-right-radius: unset;
-    box-shadow: 0 0 0.5rem 0 #646464;
+    border-bottom-right-radius: unset;
+    box-shadow: 0;
 }
 
 .item-title,
@@ -113,8 +125,26 @@
     padding: 1rem;
 }
 
+.item-title {
+    font-size: 1.65rem;
+}
+
+.item-title a {
+    color: var(--colors-two);
+    text-decoration: none;
+}
+
+.item-title a:hover {
+    color: var(--colors-three);
+}
+
+.item-title a:active {
+    color: var(--colors-four);
+}
+
 .item-cta-price {
-    cursor: text;
+    cursor: default;
+    font-size: 1.5rem;
 }
 
 .empty-shelves {
@@ -172,22 +202,20 @@
     user-select: none;
     padding: .5rem 1rem;
     cursor: pointer;
-    color: var(--btn-four);
-    background-color: var(--powder-blue);
+    color: var(--colors-five);
+    background-color: var(--colors-one);
     border: none;
     border-radius: var(--curve-radius);
     border-top-left-radius: unset;
     border-bottom-right-radius: unset;
+    font-size: 1.25rem;
 }
 
 .snipcart-add-item:hover {
-    background-color: var(--pastel-blue);
+    background-color: var(--colors-two);
 }
 
 .snipcart-add-item:active {
-    background-color: var(--light-blue);
-}
-
-.shelf-item:hover .snipcart-add-item {
-    box-shadow: 0 0 0.5rem 0 #aeb6bf;
+    color: var(--colors-one);
+    background-color: var(--colors-three);
 }

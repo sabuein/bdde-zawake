@@ -1,32 +1,68 @@
+/* cairo-play-500 - arabic */
+@font-face {
+    font-family: "Cairo Play";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/cairo-play-v6-arabic-500.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/cairo-play-v6-arabic-500.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/cairo-play-v6-arabic-500.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-500.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/cairo-play-v6-arabic-500.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/cairo-play-v6-arabic-500.svg#CairoPlay") format("svg");
+    /* Legacy iOS */
+}
+
+/* lalezar-regular - arabic */
+@font-face {
+    font-family: 'Lalezar';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/lalezar-v14-arabic-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../fonts/lalezar-v14-arabic-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../fonts/lalezar-v14-arabic-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../fonts/lalezar-v14-arabic-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../fonts/lalezar-v14-arabic-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../fonts/lalezar-v14-arabic-regular.svg#Lalezar") format("svg");
+    /* Legacy iOS */
+}
+
 :root {
     /* Fonts */
-    --font-size: 16px;
-    --font-general: "Maven Pro";
-    --font-special: "gambado-sans";
-    --font-default: "sans-serif";
+    --font-default: "Arial";
+    --font-family-text: "Cairo Play";
+    --font-style-text: normal;
+    --font-weight-text: 500;
+    --font-family-heading: "Lalezar";
+    --font-style-heading: normal;
+    --font-weight-heading: 400;
     /* Colors */
-    --grey-bg: #f5f5f5;
-    --main-bg-color: silver;
-    --second-bg-color: #f2f3f4;
+    --colors-one: #02043f;
+    --colors-one-op: #02043f50;
+    --colors-two: #d30045;
+    --colors-three: #ff9400;
+    --colors-three-op: #d3004510;
+    --colors-four: #ffc540;
+    --colors-four-op: #ff940010;
+    --colors-five: #f4f0ef;
     --brand-color: #ff1a75;
-    /* Resource https://htmlcolorcodes.com/color-picker/ */
-    --harmonies-one: #ecf0f1;
-    --harmonies-two: #4490ff;
-    --harmonies-three: #5644ff;
-    --harmonies-four: #b344ff;
-    --harmonies-five: #ff44ed;
-    --harmonies-six: #f8f9f9;
-    --powder-blue: #b6d0e2;
-    --pastel-blue: #a7c7e7;
-    --light-blue: #add8e6;
-    --btn-four: #07485d;
-    --a-vanilla: #f3e5ab;
-    --a-peach: #ffe5b4;
     /* Setting */
     --curve-radius: 1rem;
     --brand-radius: 50%;
     --brand-height: 3.75rem;
     --brand-width: 3.75rem;
+    font-size: 16px;
 }
 
 *,
@@ -36,28 +72,37 @@ body {
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    font-family: var(--font-general), var(--font-default);
-    font-size: var(--font-size);
+    font-family: var(--font-family-text), var(--font-default);
+    font-style: var(--font-style-text);
+    font-weight: var(--font-weight-text);
 }
 
 body {
-    background-color: var(--second-bg-color);
+    color: var(--colors-one);
+    background-color: var(--color-five);
 }
 
 a:link,
 a:visited {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
     text-decoration: none;
-    color: var(--harmonies-three);
-    color: var(--a-vanilla);
-    color: var(--harmonies-four);
+    color: var(--colors-four);
 }
 
 a:hover {
-    color: var(--harmonies-two);
-    color: var(--a-peach);
-    color: var(--harmonies-four);
+    text-decoration: underline;
+    color: var(--colors-three);
 }
 
 a:active {
-    color: var(--harmonies-four);
+    color: var(--colors-one);
+}
+
+h1, h2 {
+    font-family: var(--font-family-heading);
+    font-style: var(--font-style-heading);
+    font-weight: var(--font-weight-heading);
+    color: inherit;
 }
