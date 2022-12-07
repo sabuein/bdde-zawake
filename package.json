@@ -1,10 +1,10 @@
 {
-  "name": "zawake-falastin",
+  "name": "bdde-zawake",
   "description": "A Ghost theme for Zawake project, an e-commerce venture between a brother (myself) and his sister (Hanan)",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sabuein/zawake-falastin.git"
+    "url": "git+https://github.com/sabuein/bdde-zawake.git"
   },
   "screenshots": {
     "desktop": "assets/screenshot-desktop.jpg",
@@ -25,10 +25,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sabuein/zawake-falastin/issues"
+    "url": "https://github.com/sabuein/bdde-zawake/issues"
   },
   "homepage": "https://zawake.com/",
-  "readme": "https://github.com/sabuein/zawake-falastin#readme",
+  "readme": "https://github.com/sabuein/bdde-zawake#readme",
   "config": {
     "posts_per_page": 9,
     "card_assets": true,
