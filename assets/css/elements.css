@@ -51,17 +51,22 @@
     --colors-one: #02043f;
     --colors-one-op: #02043f50;
     --colors-two: #d30045;
+    --colors-two-op: #d3004510;
     --colors-three: #ff9400;
     --colors-three-op: #d3004510;
     --colors-four: #ffc540;
     --colors-four-op: #ff940010;
     --colors-five: #f4f0ef;
+    --colors-five-op: #f4f0ef10;
+    --colors-six: #cbcbcb;
+    --colors-six-op: #cbcbcb10;
     --brand-color: #ff1a75;
     /* Setting */
     --curve-radius: 1rem;
     --brand-radius: 50%;
     --brand-height: 3.75rem;
     --brand-width: 3.75rem;
+    --primary-border: 1px solid #dadce0;
     font-size: 16px;
 }
 

@@ -14,5 +14,11 @@ initCart();
 let x = new Person({ firstName: "Salaheddin", lastName: "AbuEin" });
 let y = new Person({ firstName: "AlmutasemBellah", lastName: "AbuEin" });
 let z = JSON.stringify(x);
-
+cl(z);
 download(x, y);
+
+
+let right = document.querySelectorAll("span.right.arrows"),
+    left = document.querySelectorAll("span.left.arrows");
+
+let xyo = document.querySelector("shelf-content");document.querySelector("body > main > section:nth-child(2) > article")

@@ -76,6 +76,7 @@
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
+    border: var(--primary-border);
     font-family: var(--font-special), var(--font-default);
     cursor: default;
     box-shadow: none;
@@ -91,15 +92,15 @@
 }
 
 .shelf-item:nth-child(odd) {
-    background-color: var(--colors-three-op);
+    background-color: var(--colors-five-op);
 }
 
 .shelf-item:nth-child(even) {
-    background-color: var(--colors-four-op);
+    background-color: var(--colors-six-op);
 }
 
 .shelf-item:hover {
-    box-shadow: 0 0 1rem 0 var(--colors-one-op);
+    box-shadow: 0 0 1rem 0 var(--colors-five);
 }
 
 .item-figure {
@@ -140,6 +141,33 @@
     color: red;
 }
 
+/* Footer */
+
+.zawake-footer {
+    min-height: 15rem;
+    width: 100%;
+    color: var(--colors-six);
+    background-color: var(--colors-one);
+    gap: 2rem;
+}
+
+.zawake-footer a:link,
+.zawake-footer a:visited {
+    color: inherit;
+}
+
+.zawake-footer a:hover {
+    color: var(--colors-five);
+}
+
+.zawake-footer a:active {
+    color: var(--colors-four);
+}
+
+.zawake-footer-login {
+    gap: 2rem;
+}
+
 /* Ghost core classes */
 
 .kg-width-wide,
@@ -161,26 +189,25 @@
     position: fixed;
     bottom: 0px;
     right: 0px;
-    animation: 250ms ease 0s 1 normal none running animation-bhegco;
-    transition: opacity 0.3s ease 0s;
     overflow: hidden;
     cursor: pointer;
-    background-color: var(--brand-color);
-    border-radius: var(--brand-radius);
-    height: var(--brand-height);
-    min-width: var(--brand-width);
-    margin: 0 1.25rem 1.75rem 0;
-    box-shadow: 0 0 .25rem 0 #646464;
-    text-align: center;
+    margin: 0 1.25rem 1.25rem 0;
 }
 
 .snipcart-trigger-aside svg {
-    margin-top: 1.2rem;
-    width: 1.5rem;
+    width: 4rem;
 }
 
-.snipcart-trigger-aside svg path {
-    fill: #ffffff;
+.snipcart-trigger-aside-text {
+    background-color: rgb(59, 175, 218);
+    padding: .15rem 1rem;
+    border-radius: var(--curve-radius);
+    color: var(--colors-two);
+    font-family: var(--font-default);
+}
+
+.snipcart-total-price {
+    font-family: inherit;
 }
 
 .snipcart__icon {
