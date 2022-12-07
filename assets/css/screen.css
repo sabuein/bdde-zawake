@@ -46,7 +46,7 @@
 .shelf-title h2 {
     padding-bottom: .75rem;
     font-size: 2.5rem;
-    color: var(--colors-two);
+    color: var(--brand-color);
 }
 
 .shelf-content::-webkit-scrollbar {
@@ -73,6 +73,7 @@
 
 .shelf-item {
     flex: 0 0 20rem;
+    flex-shrink: 0;
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
@@ -83,20 +84,25 @@
     transition: .333s ease-in-out 0s boxShadow;
 }
 
+.shelf-item:only-child {
+    margin: 0;
+}
 .shelf-item:first-child {
-    margin-right: 3rem;
+    margin-left: auto;
 }
 
 .shelf-item:last-child {
-    margin-left: 3rem;
+    
+    margin-right: auto;
 }
 
+
 .shelf-item:nth-child(odd) {
-    background-color: var(--colors-five-op);
+    background-color: var(--mintcream);
 }
 
 .shelf-item:nth-child(even) {
-    background-color: var(--colors-six-op);
+    background-color: var(--aliceblue);
 }
 
 .shelf-item:hover {
@@ -187,22 +193,36 @@
     user-select: none;
     z-index: 3999995;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
     cursor: pointer;
-    margin: 0 1.25rem 1.25rem 0;
+    margin: 0 0 1.25rem 6rem;
 }
 
 .snipcart-trigger-aside svg {
     width: 4rem;
 }
 
+.snipcart-trigger-aside svg > path:nth-child(1) {
+    fill: transparent;
+}
+
+.snipcart-trigger-aside svg > path:nth-child(2),
+.snipcart-trigger-aside svg > path:nth-child(4) {
+    fill: var(--brand-color);
+}
+
+.snipcart-trigger-aside svg > path:nth-child(3),
+.snipcart-trigger-aside svg > path:nth-child(5) {
+    fill: none;
+}
+
 .snipcart-trigger-aside-text {
-    background-color: rgb(59, 175, 218);
+    background-color: var(--brand-color);
     padding: .15rem 1rem;
     border-radius: var(--curve-radius);
-    color: var(--colors-two);
+    color: var(--colors-five);
     font-family: var(--font-default);
 }
 
@@ -224,20 +244,26 @@
     padding: .5rem 1rem;
     cursor: pointer;
     color: var(--colors-five);
-    background-color: var(--colors-two);
-    border: none;
+    background-color: var(--brand-color);
+    border: thin solid transparent;
     border-radius: var(--curve-radius);
     border-top-left-radius: unset;
     border-bottom-right-radius: unset;
     font-size: 1.25rem;
+    box-shadow: none;
+    transition: .2s ease-out;
 }
 
 .snipcart-add-item:hover {
-    color: var(--colors-one);
-    background-color: var(--colors-three);
+    box-shadow: 0 0.55rem 0.25rem -0.5rem var(--colors-one);
+    background-color: var(--brand-color-hover);
 }
 
 .snipcart-add-item:active {
-    color: var(--colors-one);
-    background-color: var(--colors-four);
+    box-shadow: none;
+    background-color: var(--brand-color-active);
+}
+
+.snipcart-button-primary:active {
+    background-color: var(--brand-color-active);
 }

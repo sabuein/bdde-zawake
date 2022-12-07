@@ -60,7 +60,12 @@
     --colors-five-op: #f4f0ef10;
     --colors-six: #cbcbcb;
     --colors-six-op: #cbcbcb10;
-    --brand-color: #ff1a75;
+    --brand-color: #1a4db3;
+    --brand-color-hover: #0d59f2;
+    --brand-color-active: #d70df2;
+    --white: #ffffff;
+    --mintcream: #f5fffa;
+    --aliceblue: #f0f8ff;
     /* Setting */
     --curve-radius: 1rem;
     --brand-radius: 50%;
@@ -84,7 +89,7 @@ body {
 
 body {
     color: var(--colors-one);
-    background-color: var(--color-five);
+    background-color: var(--white);
 }
 
 a:link,
@@ -93,16 +98,16 @@ a:visited {
     font-style: inherit;
     font-weight: inherit;
     text-decoration: none;
-    color: var(--colors-four);
+    color: var(--brand-color);
 }
 
 a:hover {
     text-decoration: underline;
-    color: var(--colors-three);
+    color: var(--brand-color-hover);
 }
 
 a:active {
-    color: var(--colors-two);
+    color: var(--brand-color-active);
 }
 
 h1, h2 {
