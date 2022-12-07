@@ -97,7 +97,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--colors-one);
+    color: var(--colors-two);
 }
 
 h1, h2 {

@@ -1,6 +1,53 @@
 const cl = (input) => { console.log(input); }
 const id = (elementId) => { return document.getElementById(elementId); }
 
+const download = (...data) => {
+    let output,
+        temp = [],
+        properties = { type: "text/plain" };
+    for (let i = 0; i < data.length; i++) {
+        let keysArray = Object.keys(data[i]),
+            valuesArray = Object.keys(data[i]).map(key => data[i][key]);
+        for (let i = 0; i < keysArray.length; i++) {
+            // temp.push(keysArray[i] + ": " + valuesArray[i] + "\t");
+            temp.push(`"${keysArray[i]}": `);
+            if (i == keysArray.length - 1) {
+                temp.push(`"${valuesArray[i]}"`);
+            } else {
+                temp.push(`"${valuesArray[i]}", `);
+            }
+        }
+        cl(temp.length);
+        //temp[-1].slice(0, -2);
+        temp.push("\r\n");
+    }
+    cl(temp);
+    // let data = [];
+    // data.push("This is a test\n");
+    // data.push("Of creating a file\n");
+    // data.push("In a browser\n");
+    // let properties = { type: "text/plain" }; // Specify the file's mime-type.
+    // var plainText = "";
+    // var keysArray = Object.keys(data)
+    // var valuesArray = Object.keys(data).map(key => data[key])
+    // for (let i = 0; i < keysArray.length; i++) {
+    //     plainText = plainText + keysArray[i] + ": " + valuesArray[i] + "\n";
+    // }
+    // console.log(plainText)
+
+    try {
+        // Specify the filename using the File constructor, but ...
+        cl("Generating File.txt ...");
+        output = new File(temp, "file.txt", properties);
+    } catch (e) {
+        // ... fall back to the Blob constructor if that is not supported.
+        cl("Generating Blob ...");
+        output = new Blob(temp, properties);
+    }
+    let url = URL.createObjectURL(output);
+    document.getElementById("link").href = url;
+}
+
 const initCart = () => {
     window.SnipcartSettings = {
         publicApiKey: "MmQ4N2U1YTUtYmVjNi00MWI5LTg4NWMtZDY0ZTM4ZmFiZDAxNjM4MDUwMDY0OTc5NDQ5NTA2",
@@ -17,5 +64,6 @@ const initCart = () => {
 export {
     cl,
     id,
+    download,
     initCart
 }

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /dont-index-this-folder/
+Sitemap: https://htmlcheatsheet.com/sitemap.xml

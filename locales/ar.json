@@ -28,19 +28,20 @@
     "% posts": "% posts",
     "1 min read": "1 min read",
     "% min read": "% min read",
-    "Add to cart": "أضف إلى سلة المشتريات",
+    "Add to cart": "أضف إلى سلة التسوق",
     "Account": "الملف الشخصي",
     "Login": "تسجيل الدخول",
     "Price": "السعر",
     "Israeli Shekel": "شيكل إسرائيلي جديد",
     "Sorry, there are no products in this collection": "نعتذر منكم، ما في منتجات على هذا الرف.",
     "Number of items": "عدد الأصناف",
-    "Checkout": "سلة المشتريات",
+    "Checkout": "سلة التسوق",
     "Total price": "المجموع",
     "Cake": "كيك",
     "News and updates": "شو في ما في؟",
     "Pies": "فطاير",
     "Open buffet": "بوفيه مفتوح",
     "Go right": "روح عل اليمين",
-    "Go left": "روح عل الشمال"
+    "Go left": "روح عل الشمال",
+    "Show/hide shopping cart": "إخفاء/إظهار سلة التسوق"
 }

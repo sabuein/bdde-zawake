@@ -40,12 +40,13 @@
 }
 
 .arrows:active {
-    color: var(--colors-one);
+    color: var(--colors-two);
 }
 
 .shelf-title h2 {
     padding-bottom: .75rem;
     font-size: 2.5rem;
+    color: var(--colors-two);
 }
 
 .shelf-content::-webkit-scrollbar {
@@ -78,8 +79,7 @@
     font-family: var(--font-special), var(--font-default);
     cursor: default;
     box-shadow: none;
-    scale: 1;
-    transition: .333s ease-in-out 0s boxShadow, scale;
+    transition: .333s ease-in-out 0s boxShadow;
 }
 
 .shelf-item:first-child {
@@ -99,12 +99,10 @@
 }
 
 .shelf-item:hover {
-    box-shadow: 0 0 2rem 0 var(--colors-one-op);
-    scale: 1.01;
+    box-shadow: 0 0 1rem 0 var(--colors-one-op);
 }
 
 .item-figure {
-    cursor: pointer;
     max-width: inherit;
 }
 
@@ -115,7 +113,7 @@
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
-    box-shadow: 0;
+    box-shadow: none;
 }
 
 .item-title,
@@ -130,16 +128,7 @@
 }
 
 .item-title a {
-    color: var(--colors-two);
     text-decoration: none;
-}
-
-.item-title a:hover {
-    color: var(--colors-three);
-}
-
-.item-title a:active {
-    color: var(--colors-four);
 }
 
 .item-cta-price {
@@ -186,7 +175,7 @@
 }
 
 .snipcart-trigger-aside svg {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     width: 1.5rem;
 }
 
@@ -198,12 +187,17 @@
     cursor: pointer;
 }
 
+.snipcart-item-line__media {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+
 .snipcart-add-item {
     user-select: none;
     padding: .5rem 1rem;
     cursor: pointer;
     color: var(--colors-five);
-    background-color: var(--colors-one);
+    background-color: var(--colors-two);
     border: none;
     border-radius: var(--curve-radius);
     border-top-left-radius: unset;
@@ -212,10 +206,11 @@
 }
 
 .snipcart-add-item:hover {
-    background-color: var(--colors-two);
+    color: var(--colors-one);
+    background-color: var(--colors-three);
 }
 
 .snipcart-add-item:active {
     color: var(--colors-one);
-    background-color: var(--colors-three);
+    background-color: var(--colors-four);
 }
