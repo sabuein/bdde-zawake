@@ -1,4 +1,4 @@
-# Zawake Falastin *i.e.* Sweets of (occupied) Palestine
+# Bdde Zawake *i.e.* I demand sweets
 
 A Ghost theme for [Zawake][1] project, an e-commerce venture between a brother (myself) and his sister (Hanan).
 
@@ -88,8 +88,9 @@ Checking theme compatibility...
 
 ## Links
 
-- [google-webfonts-helper][fonts], A Hassle-Free Way to Self-Host Google Fonts
-- [Icons8][icons8], social media icons and more.
+- [google-webfonts-helper][fonts] – a hassle-free way to self-host Google fonts
+- [Icons8][icons8] – a free service provides icons, clipart illustrations, photos, and music
+- [All Emojis][emojis] – a freeCodeCamp's emoji list for copy and paste
 
 # To be continued...
 
@@ -102,3 +103,4 @@ Salah.
 [1]: https://zawake.com/ "زواكي - حلويات من المطبخ إلى الفم مباشرة"
 [fonts]: https://gwfh.mranftl.com/fonts "google webfonts helper"
 [icons8]: https://icons8.com/ "Free Icons, Clipart Illustrations, Photos, and Music"
+[emojis]: https://www.freecodecamp.org/news/all-emojis-emoji-list-for-copy-and-paste/ "All Emojis – Emoji List for Copy and Paste"
