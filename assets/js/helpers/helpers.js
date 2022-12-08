@@ -1,6 +1,17 @@
 const cl = (input) => { console.log(input); }
 const id = (elementId) => { return document.getElementById(elementId); }
 
+const updateProgress = () => {
+    const progressBar = document.querySelector(".reading-progress"),
+        totalHeight = document.body.clientHeight,
+        windowHeight = document.documentElement.clientHeight,
+        position = window.scrollY,
+        progress = position / (totalHeight - windowHeight) * 100;
+    progressBar.setAttribute("value", progress);
+    requestAnimationFrame(updateProgress);
+    document.body.style.marginTop = "3rem";
+}
+
 const download = (...data) => {
     let output,
         temp = [],
@@ -103,6 +114,7 @@ const myInterval = (containers, degree) => {
 export {
     cl,
     id,
+    updateProgress,
     download,
     triggerMovement,
     myInterval,

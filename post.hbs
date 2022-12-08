@@ -1,6 +1,7 @@
 {{!< default}}  
 <!-- post.hbs -->
 {{#post}}
+<progress class="reading-progress" value="0" max="100" aria-label="Reading progress"></progress>
 {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
 {{#if feature_image}}<figure title="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" style='--img-src: url("{{img_url feature_image}}");' class="zawake-post-figure fixed-img"></figure>{{/if}}
 <article class="zawake-{{post_class}} flex column nowrap align-content-center justify-content-center align-items-stretch">
@@ -28,4 +29,9 @@
     </section>{{/if}}
     <section>{{> "post-pagination"}}</section>
 </article>
+{{#contentFor "head_scripts"}}{{/contentFor}}
+{{#contentFor "foot_scripts"}}<script type="module">
+    import { updateProgress } from "/assets/js/helpers/helpers.js";
+    requestAnimationFrame(updateProgress);
+</script>{{/contentFor}}
 {{/post}}
