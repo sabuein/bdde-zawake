@@ -1,4 +1,4 @@
-import { cl, initCart, triggerMovement, download } from "./helpers/helpers.js";
+import { cl, initCart, triggerMovement, myInterval, download } from "./helpers/helpers.js";
 
 class Person {
     constructor(data) {
@@ -17,21 +17,10 @@ let z = JSON.stringify(x);
 cl(z);
 download(x, y);
 
-let xyz = window.moveme,
+let xyz = document.getElementsByClassName("shelf-content"),
     leftiez = document.querySelectorAll("span.left.arrows"),
     rightiez = document.querySelectorAll("span.right.arrows"),
     degree = 150;
 
 triggerMovement(leftiez, rightiez, xyz, degree);
-
-const myInterval = setInterval(letsPlay, 120);
-
-function letsPlay() {
-    for (let i = 0; i < xyz.length; i++) {
-        if ((xyz[i].scrollWidth + xyz[i].scrollLeft + 1) > xyz[i].clientWidth) {
-            xyz[i].scrollLeft -= degree;
-        } else {
-            clearInterval(myInterval);
-        }
-    }
-}
+// myInterval(xyz, degree);
