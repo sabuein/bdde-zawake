@@ -1,31 +1,33 @@
-{{!< default}}
+{{!< default}}  
 <!-- post.hbs -->
-<main class="{{post_class}}">
-    <section>
-        {{#primary_tag}}<a href="{{url}}">{{name}}</a>{{/primary_tag}}
-        {{#if featured}}<span>{{> "icons/fire"}} Featured</span>{{/if}}
-        <h2>{{title}}</h2>
+{{#post}}
+{{#if feature_image}}<figure title="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" style='--img-src: url("{{img_url feature_image}}");' class="zawake-post-figure fixed-img"></figure>{{/if}}
+<article class="zawake-{{post_class}} flex column nowrap align-content-center justify-content-center align-items-stretch">
+    <header class="zawake-post-heading">
+        <h1 title="{{title}}">{{title}}</h1>
+        {{#if featured}}<div>{{> "icons/fire"}}&nbsp;{{t "Featured"}}</div>{{/if}}
+        {{#primary_tag}}<div><a href="{{url absolute='true'}}" target="_self" title="{{name}}">{{name}}</a></div>{{/primary_tag}}
         {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
         <ul>
             {{#foreach authors}}
             {{#if profile_image}}
-            <a href="{{url}}"><img src="{{img_url profile_image}}" alt="{{name}}" /></a>
+            <a href="{{url absolute='true'}}" title="{{name}}" target="_self"><img src="{{img_url profile_image}}" alt="{{name}}" class="zawake-post-profile-avatar fixed-img" /></a>
             {{else}}
-            <a href="{{url}}">{{> "icons/avatar"}}</a>
+            <a href="{{url absolute='true'}}" title="{{name}}" target="_self">{{> "icons/avatar"}}</a>
             {{/if}}
             {{/foreach}}
         </ul>
-        <!-- h3>{{authors}}</h3 -->
-        <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-        {{#if reading_time}}<span>&bull;</span> {{reading_time}}</span>{{/if}}
-        {{#if feature_image}}
-        <figure>
-            <img src="{{img_url feature_image}}" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" />
-            {{#if feature_image_caption}}
-            <figcaption>{{feature_image_caption}}</figcaption>
-            {{/if}}
-        </figure>
-        {{/if}}
-    </section>
+        <h3>{{authors}}</h3>
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date updated_at}}</time>
+        {{#if reading_time}}<span>&bull;</span>&nbsp;{{reading_time}}</span>{{/if}}
+    </header>
     <section>{{content}}</section>
-</main>
+    {{#if comments}}<section>
+        <h2><span class="sep-right">{{> "icons/discussion"}}</span>{{t "Discussion"}}</h2>
+        <div>{{comment_count empty=(t "No comments") singular=(t "comment") plural=(t "comments") autowrap="div" class="comments-style"}}</div>
+        <p>{{t "Please pay attention to our"}}&nbsp;<a href="/guides" title="{{t 'Community guidelines'}}" target="_self">{{t "Community guidelines"}}</a>&period;</p>
+        <div>{{comments title=(t "Join the members discussion below&colon;") count=false mode="auto" saturation=80}}</div>
+    </section>{{/if}}
+    <section>{{> "post-pagination"}}</section>
+</article>
+{{/post}}

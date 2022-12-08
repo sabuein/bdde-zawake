@@ -24,13 +24,13 @@
             {{/if}}
             <nav>{{navigation}}</nav>
         </header>
-        <main class="{{body_class}} flex column nowrap align-content-center justify-content-center align-items-center">{{{body}}}</main>
-        <footer class="zawake-footer flex column nowrap align-content-center justify-content-center align-items-center">{{> "zawake-footer"}}</footer>
+        <main id="content" class="{{body_class}} flex column nowrap align-content-center justify-content-center align-items-center">{{{body}}}</main>
+        <section>{{> "social-media-accounts"}}</section>
+        <footer class="zawake-footer fixed-img flex column nowrap align-content-center justify-content-center align-items-center">{{> "zawake-footer"}}</footer>
         <aside class="snipcart-checkout snipcart-trigger-aside flex row nowrap align-content-center justify-content-center align-items-center" title="{{t "Show/hide shopping cart"}}">
             <div>{{> "icons/cart"}}</div>
             <div class="snipcart-trigger-aside-text" title="{{t "Total price"}}">{{t "Total price"}}&colon;&nbsp;<span class="snipcart-total-price"></span></div>
         </aside>
-        <a id="link" target="_blank" download="file.txt">Download</a>
         {{{block "foot_scripts"}}}
         {{ghost_foot}}
     </body>
