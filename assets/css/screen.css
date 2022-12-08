@@ -11,7 +11,7 @@
 .sign-post {}
 
 .shelves-post {
-    flex-basis: 45rem;
+    flex: 0 0 50rem;
     gap: 5rem;
     padding: 1rem;
     border-radius: var(--curve-radius);
@@ -72,8 +72,8 @@
 }
 
 .shelf-item {
-    flex: 0 0 20rem;
-    flex-shrink: 0;
+    flex: 0 0 24rem;
+    height: 36rem;
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
@@ -114,8 +114,7 @@
 }
 
 .item-img {
-    height: 100%;
-    max-height: 15rem;
+    height: 15rem;
     width: 100%;
     border-radius: var(--curve-radius);
     border-bottom-left-radius: unset;
@@ -147,34 +146,99 @@
     color: red;
 }
 
+/* Post */
+
+.post-template {
+    width: 100%;
+    text-align: center;
+}
+
+.zawake-post-figure {
+    background-image: var(--img-src);
+    background-color: #ffe7e7;
+    height: 40rem;
+    width: 100%;
+}
+
+.zawake-post {
+    width: 85%;
+}
+
+.zawake-post-profile-avatar {
+    border-radius: 50%;
+    max-width: 5rem;
+}
+
+.zawake-post-pagination {
+    gap: 5rem;
+}
+
+.zawake-post-pagination-img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.zawake-post-pagination-label {
+    margin-left: .5rem;
+}
+
+/* Social media accounts */
+
+.social-media-accounts {
+    gap: 2rem;
+}
+
 /* Footer */
 
 .zawake-footer {
-    min-height: 15rem;
+    margin-top: 2rem;
+    padding: 3rem 0;
+    min-height: 35rem;
     width: 100%;
-    color: var(--colors-six);
-    background-color: var(--colors-one);
     gap: 2rem;
+    color: #e7f6fe;
+    background-image: url("/assets/images/david-kohler-MfdmKZDPAXM-unsplash.jpg");
+    background-color: #ffe7e7;
+    background-position: right;    
+}
+
+.zawake-footer a {
+    text-decoration: none;
 }
 
 .zawake-footer a:link,
 .zawake-footer a:visited {
     color: inherit;
+    font-family: var(--font-default);
 }
 
 .zawake-footer a:hover {
-    color: var(--colors-five);
+    color: #ffffff;
 }
 
 .zawake-footer a:active {
-    color: var(--colors-four);
+    color: var(--brand-color);
 }
 
 .zawake-footer-login {
     gap: 2rem;
 }
 
+.zawake-footer-button {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    font-size: 3rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
 /* Ghost core classes */
+
+#ghost-comments-root .ghost-display {
+    direction: rtl !important;
+}
 
 .kg-width-wide,
 .kg-width-full {
@@ -251,12 +315,13 @@
     border-bottom-right-radius: unset;
     font-size: 1.25rem;
     box-shadow: none;
-    transition: .2s ease-out;
+    opacity: 1;
 }
 
 .snipcart-add-item:hover {
     box-shadow: 0 0.55rem 0.25rem -0.5rem var(--colors-one);
     background-color: var(--brand-color-hover);
+    opacity: .9;
 }
 
 .snipcart-add-item:active {
