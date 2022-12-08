@@ -1,5 +1,10 @@
 <!-- zawake-footer.hbs -->
-<header class="zawake-footer-heading"><nav>{{navigation type="secondary"}}</nav></header>
+<header class="zawake-footer-heading flex row nowrap align-content-center justify-content-center align-items-center">
+    <h3>{{heading}}</h3>
+    <nav>{{navigation type="secondary"}}</nav>
+</header>
 <section class="zawake-footer-login flex row nowrap align-content-center justify-content-center align-items-center">{{> "login" heading="Portal links"}}</section>
-<section><a id="link" href="#" target="_blank" download="file.txt">{{t "Download"}}</a></section>
-<div class="zawake-footer-button"><a href="#content" title="{{t 'Back-to-Top'}}" target="_self">{{> "icons/arrow-top"}}</a></div>
+<footer>
+    <menu class="zawake-footer-icons flex row nowrap align-content-center justify-content-center align-items-center">{{> "zawake-footer-icons" heading="Beautiful life"}}</menu>
+    <div>{{{t "With"}}}<span title="{{{t 'a lot of love'}}}">{{> "icons/heart-on-fire"}}</span>{{{t "from"}}}<span title="{{t 'Occupied Falastin'}}">{{> "icons/occupied-falastin"}}</span><span title="{{{t 'and'}}}">{{{t "and"}}}</span><span title="{{t 'United Kingdom'}}">{{> "icons/united-kingdom"}}</span>&period;</div>
+</footer>
