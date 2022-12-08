@@ -1,10 +1,10 @@
-<!-- social-media-accounts.hbs -->
+<!-- social-accounts.hbs -->
 <header><h2>{{{t "Follow {us} Our handle is {handle}" us=@site.title handle="&commat;bddezawake"}}}</h2></header>
-<section class="social-media-accounts flex row nowrap align-content-center justify-content-center align-items-center">
-    <a href="https://www.facebook.com/bddezawake/" title="{{t 'Facebook'}}" target="_blank"><figure>{{> "logos/facebook"}}</figure></a>
+<section class="social-accounts flex row nowrap align-content-center justify-content-center align-items-center">
+    {{#if @site.facebook}}<a href="{{facebook_url}}" title="{{t 'Facebook'}}" target="_blank"><figure>{{> "logos/facebook"}}</figure></a>{{/if}}
     <a href="https://www.tiktok.com/@bddezawake" title="{{t 'TikTok'}}" target="_blank"><figure>{{> "logos/tiktok"}}</figure></a>
     <a href="https://www.linkedin.com/company/bddezawake/" title="{{t 'LinkedIn'}}" target="_blank"><figure>{{> "logos/linkedin"}}</figure></a>
-    <a href="https://twitter.com/bddezawake" title="{{t 'Twitter'}}" target="_blank"><figure>{{> "logos/twitter"}}</figure></a>
+    {{#if @site.twitter}}<a href="{{twitter_url}}" title="{{t 'Twitter'}}" target="_blank"><figure>{{> "logos/twitter"}}</figure></a>{{/if}}
     <a href="https://www.pinterest.co.uk/bddezawake/" title="{{t 'Pinterest'}}" target="_blank"><figure>{{> "logos/pinterest"}}</figure></a>
     <a href="https://www.snapchat.com/add/bddezawake" title="{{t 'Snapchat'}}" target="_blank"><figure>{{> "logos/snapchat"}}</figure></a>
     <a href="https://github.com/sabuein/bddezawake" title="{{t 'GitHub'}}" target="_blank"><figure>{{> "logos/github"}}</figure></a>
