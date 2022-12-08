@@ -1,0 +1,24 @@
+<!-- members-form.hbs -->
+{{#if @member.paid}}
+<p>Thanks for becoming a paying member<span>{{> "icons/party-popper"}}</span></p>
+<a href="javascript:" data-members-edit-billing data-members-success="/billing-update-success/" data-members-cancel="/billing-update-cancel/">Edit billing info</a>
+{{!-- Logged in, paying member: Redirect home --}}
+<script>
+    const redirect = () => {
+        setTimeout(() => { window.location = "{{@site.url}}"; }, 3000);
+    }
+    redirect();
+</script>
+{{else if @member}}
+<p>Thanks for being a member<span>{{> "icons/raising-hands"}}</span></p>
+<a href="javascript:" title="{{t "Sign out"}}" target="_self" data-members-signout>{{t "Sign out"}}</a>
+{{else}}
+<p>{{{t "You should totally sign up"}}}&hellip;<span>{{> "icons/fountain-pen"}}</span></p>
+<form data-members-form="subscribe">
+    <input data-members-label type="hidden" value="Early Adopters" />
+    <input data-members-name type="name" required="true" />
+    <input data-members-email type="email" required="true" />
+    <button type="submit">{{t "Subscribe"}}</button>
+    <p data-members-error><!-- error message will appear here --></p>
+</form>
+{{/if}}

@@ -1,9 +1,14 @@
 <!-- login.hbs -->
 {{#if @site.members_enabled}}
 <h3 title="{{t heading}}">{{t heading}}&colon;</h3>
-<a href="#/portal" title="{{t "Portal"}}" target="_self">{{t "Portal"}}</a>
-<a href="#/portal/signin" title="{{t "Sign in"}}" target="_self">{{t "Sign in"}}</a>
-<a href="#/portal/signup" title="{{t "Sign up"}}" target="_self">{{t "Sign up"}}</a>
-<a href="#/portal/account" title="{{t "Account"}}" target="_self">{{t "Account"}}</a>
-<a href="#/portal/account/profile" title="{{t "Profile"}}" target="_self">{{t "Profile"}}</a>
+{{#if @member}}
+<a href="#/portal" title="{{> 'icons/cyclone'}}&nbsp;{{t 'Portal'}}" target="_top" data-portal><span>{{> "icons/cyclone"}}</span>{{t "Portal"}}</a>
+<a href="#/portal/account" title="{{> 'icons/bust-in-silhouette'}}&nbsp;{{t 'Account'}}" target="_self" data-portal="account"><span>{{> "icons/bust-in-silhouette"}}</span>{{t "Account"}}</a>
+<a href="#/portal/account/profile" title="{{> 'icons/identification-card'}}&nbsp;{{t 'Profile'}}" target="_self" data-portal="profile"><span>{{> "icons/identification-card"}}</span>{{t "Profile"}}</a>
+<a href="#/portal/account/password" title="{{> 'icons/key'}}&nbsp;{{t 'Change password'}}" target="_self" data-portal="profile"><span>{{> "icons/key"}}</span>{{t "Change password"}}</a>
+<a href="javascript:" title="{{> 'icons/unlocked'}}&nbsp;{{t 'Sign out'}}" target="_self" data-members-signout><span>{{> "icons/unlocked"}}</span>{{t "Sign out"}}</a>
+{{else}}
+<a href="#/portal/signin" title="{{> 'icons/locked-with-key'}}&nbsp;{{t 'Sign in'}}" target="_self" data-portal="signin"><span>{{> "icons/locked-with-key"}}</span>{{t "Sign in"}}</a>
+<a href="#/portal/signup" title="{{> 'icons/locked-with-pen'}}&nbsp;{{t 'Sign up'}}" target="_self" data-portal="signup"><span>{{> "icons/locked-with-pen"}}</span>{{t "Sign up"}}</a>
+{{/if}}
 {{/if}}

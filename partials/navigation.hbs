@@ -1,12 +1,14 @@
+<!-- navigation.hbs -->
 <menu class="nav flex row nowrap align-content-center justify-content-center align-items-center">
     {{#if isSecondary}}
     {{#foreach navigation}}
-    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}" target="_self" title="{{label}}">{{label}}</a></li>
+    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute=true}}" title="{{> 'icons/link'}}&nbsp;{{label}}"><span>{{> "icons/link"}}</span>{{label}}</a></li>
     {{/foreach}}
-    <li class="xxx"><a href="/sitemap.xml" target="_self" title="XML Sitemap">XML Sitemap</a></li>
+    <li><a href="/sitemap.xml" target="_self" title="{{> 'icons/globe-with-meridians'}}&nbsp;{{t 'XML Sitemap'}}"><span>{{> "icons/globe-with-meridians"}}</span>{{t "XML Sitemap"}}</a></li>
     {{else}}
+    <li><a href="#" target="_self" title="{{> 'icons/magnifying-glass-tilted-left'}}&nbsp;{{t 'Search'}}" data-ghost-search><span>{{> "icons/magnifying-glass-tilted-left"}}</span>{{t "Search"}}</a></li>
     {{#foreach navigation}}
-    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}" target="_self" title="{{label}}">{{label}}</a></li>
+    <li class="{{link_class for=(url) class=(concat 'nav-' slug)}}"><a href="{{url absolute=true}}" title="{{> 'icons/link'}}&nbsp;{{label}}"><span>{{> "icons/link"}}</span>{{label}}</a></li>
     {{/foreach}}
     {{/if}}
 </menu>

@@ -1,5 +1,5 @@
 <!-- elvatrina.hbs -->
-<header class="shelf-title"><h2 title="{{t heading}}"><span class="right arrows" title="{{t "Go right"}}">&rightarrow;</span>{{t heading}}<span class="left arrows" title="{{t "Go left"}}">&leftarrow;</span></h2></header>
+<header class="shelf-title"><span class="right arrows" title="{{t "Go right"}}">👉</span><h2 title="{{t heading}}">{{t heading}}</h2><span class="left arrows" title="{{t "Go left"}}">👈</span></header>
 {{#get "posts" include="tags,authors" filter="primary_tag:{{section}}" limit="all" as |post|}}
 <article class="shelf-content flex row nowrap align-content-center align-items-center">
     {{#foreach post}}
