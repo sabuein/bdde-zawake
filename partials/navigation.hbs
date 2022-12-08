@@ -1,12 +1,12 @@
 <menu class="nav flex row nowrap align-content-center justify-content-center align-items-center">
     {{#if isSecondary}}
     {{#foreach navigation}}
-    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}" target="_self" title="{{label}}">{{label}}</a></li>
     {{/foreach}}
-    <li class="xxx"><a href="/sitemap.xml" title="XML Sitemap">XML Sitemap</a></li>
+    <li class="xxx"><a href="/sitemap.xml" target="_self" title="XML Sitemap">XML Sitemap</a></li>
     {{else}}
     {{#foreach navigation}}
-    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    <li class="{{link_class for=(url) class=(concat "nav-" slug)}}"><a href="{{url absolute="true"}}" target="_self" title="{{label}}">{{label}}</a></li>
     {{/foreach}}
     {{/if}}
 </menu>

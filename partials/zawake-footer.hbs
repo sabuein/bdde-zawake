@@ -1,3 +1,5 @@
 <!-- zawake-footer.hbs -->
 <header class="zawake-footer-heading"><nav>{{navigation type="secondary"}}</nav></header>
-<section>{{> "login"}}</section>
+<section class="zawake-footer-login flex row nowrap align-content-center justify-content-center align-items-center">{{> "login" heading="Portal links"}}</section>
+<section><a id="link" href="#" target="_blank" download="file.txt">{{t "Download"}}</a></section>
+<div class="zawake-footer-button"><a href="#content" title="{{t 'Back-to-Top'}}" target="_self">{{> "icons/arrow-top"}}</a></div>
