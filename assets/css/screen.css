@@ -212,13 +212,13 @@
     gap: 2rem;
 }
 
-/* Social media accounts */
+/* Social accounts */
 
-.social-media-accounts {
+.social-accounts {
     gap: .5rem;
 }
 
-.social-media-accounts svg {
+.social-accounts svg {
     height: 5rem;
     width: 5rem;
 }
