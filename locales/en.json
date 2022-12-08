@@ -1,7 +1,7 @@
 {
     "Back": "Back",
-    "Newer Posts": "Newer Posts",
-    "Older Posts": "Older Posts",
+    "Newer posts": "Newer Posts",
+    "Older posts": "Older Posts",
     "Page {page} of {pages}": "Page {page} of {pages}",
     "Subscribe": "Subscribe",
     "Subscribe to {blogtitle}": "Subscribe to {blogtitle}",
@@ -43,5 +43,18 @@
     "Open buffet": "Open buffet",
     "Go right": "Go right",
     "Go left": "Go left",
-    "Show/hide shopping cart": "Show&sol;hide shopping cart"
+    "Show/hide shopping cart": "Show&sol;hide shopping cart",
+    "Portal links": "Portal links",
+    "Discussion": "Discussion",
+    "Community guidelines": "Community guidelines",
+    "Please pay attention to our": "Please pay attention to our",
+    "Join the members discussion below&colon;": "Join the members discussion below&colon;",
+    "No comments": "No comments",
+    "comment": "comment",
+    "comments": "comments",
+    "Featured": "Featured",
+    "Back-to-Top": "Back-to-Top",
+    "Download": "Download",
+    "Previous": "Previous",
+    "Next": "Next"
 }
