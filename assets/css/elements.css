@@ -88,6 +88,7 @@ body {
 }
 
 body {
+    margin-top: 1rem;
     color: var(--colors-one);
     background-color: var(--white);
     font-size: 1.5rem;

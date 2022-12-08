@@ -2,7 +2,7 @@ const cl = (input) => { console.log(input); }
 const id = (elementId) => { return document.getElementById(elementId); }
 
 const updateProgress = () => {
-    document.body.style.marginTop = "1rem";
+    // document.body.style.marginTop = "1rem";
     const progressBar = document.querySelector(".reading-progress"),
         totalHeight = document.body.clientHeight,
         windowHeight = document.documentElement.clientHeight,
