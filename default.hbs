@@ -15,6 +15,7 @@
     </head>
     <!-- default.hbs -->
     <body class="flex column nowrap align-content-center justify-content-center align-items-center">
+        <progress class="reading-progress" value="0" max="100" aria-label="Reading progress"></progress>
         <header class="flex column nowrap align-content-center justify-content-center align-items-center">
             {{#if @site.logo}}
             <figure><a href="{{@site.url}}" title="{{@site.title}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a></figure>
@@ -26,11 +27,14 @@
         </header>
         <main id="content" class="{{body_class}} flex column nowrap align-content-center justify-content-center align-items-center">{{{body}}}</main>
         <section>{{> "social-media-accounts"}}</section>
-        <footer class="zawake-footer fixed-img flex column nowrap align-content-center justify-content-center align-items-center">{{> "zawake-footer"}}</footer>
+        <footer class="zawake-footer fixed-img flex column nowrap align-content-center justify-content-center align-items-center">{{> "zawake-footer" heading=(t "We love you")}}</footer>
         <aside class="snipcart-checkout snipcart-trigger-aside flex row nowrap align-content-center justify-content-center align-items-center" title="{{t "Show/hide shopping cart"}}">
-            <div>{{> "icons/cart"}}</div>
-            <div class="snipcart-trigger-aside-text" title="{{t "Total price"}}">{{t "Total price"}}&colon;&nbsp;<span class="snipcart-total-price"></span></div>
+            <div class="snipcart-trigger-aside-div transition-this" title="{{t "Total price"}}"><span class="sep-right">{{t "Total price"}}&colon;</span><span class="snipcart-total-price"></span></div>
         </aside>
+        {{#contentFor "foot_scripts"}}<script type="module">
+            import { updateProgress } from "/assets/js/helpers/helpers.js";
+            requestAnimationFrame(updateProgress);
+        </script>{{/contentFor}}
         {{{block "foot_scripts"}}}
         {{ghost_foot}}
     </body>
