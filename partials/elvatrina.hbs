@@ -8,6 +8,7 @@
         <header class="item-title"><h3><a href="{{url}}" title="{{title}}" target="_self">{{title}}</a></h3></header>
         <div class="item-cta">{{> "item-button" item_price=tags.[1].slug}}</div>
         {{#if custom_excerpt}}<p class="item-text">&OpenCurlyDoubleQuote;{{custom_excerpt}}&CloseCurlyDoubleQuote;</p>{{/if}}
+        {{#if featured}}<div>{{> "icons/fire"}}&nbsp;{{t "Featured"}}</div>{{/if}}
     </article>
     {{/foreach}}
 </article>

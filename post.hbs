@@ -1,13 +1,12 @@
 {{!< default}}  
 <!-- post.hbs -->
 {{#post}}
+{{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
 {{#if feature_image}}<figure title="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" style='--img-src: url("{{img_url feature_image}}");' class="zawake-post-figure fixed-img"></figure>{{/if}}
 <article class="zawake-{{post_class}} flex column nowrap align-content-center justify-content-center align-items-stretch">
     <header class="zawake-post-heading">
         <h1 title="{{title}}">{{title}}</h1>
-        {{#if featured}}<div>{{> "icons/fire"}}&nbsp;{{t "Featured"}}</div>{{/if}}
-        {{#primary_tag}}<div><a href="{{url absolute='true'}}" target="_self" title="{{name}}">{{name}}</a></div>{{/primary_tag}}
-        {{#if custom_excerpt}}<p>{{custom_excerpt}}</p>{{/if}}
+        <div>{{#if featured}}<span class="sep-right">{{> "icons/fire"}}&nbsp;{{t "Featured"}}</span>{{/if}}{{#primary_tag}}<a href="{{url absolute='true'}}" target="_self" title="{{name}}">{{name}}</a>{{/primary_tag}}</div>
         <ul>
             {{#foreach authors}}
             {{#if profile_image}}
@@ -18,8 +17,7 @@
             {{/foreach}}
         </ul>
         <h3>{{authors}}</h3>
-        <time datetime="{{date format='YYYY-MM-DD'}}">{{date updated_at}}</time>
-        {{#if reading_time}}<span>&bull;</span>&nbsp;{{reading_time}}</span>{{/if}}
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date updated_at}}</time>{{#if reading_time}}<span>&bull;</span>&nbsp;<span>{{reading_time minute="Only a minute" minutes="Takes % minutes"}}</span>{{/if}}
     </header>
     <section>{{content}}</section>
     {{#if comments}}<section>
