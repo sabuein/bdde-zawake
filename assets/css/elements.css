@@ -81,10 +81,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    font-family: var(--font-family-text), var(--font-default);
-    font-style: var(--font-style-text);
-    font-weight: var(--font-weight-text);
+    overflow-anchor: none;
 }
 
 body {
@@ -92,6 +89,11 @@ body {
     color: var(--colors-one);
     background-color: var(--white);
     font-size: 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-family-text), var(--font-default);
+    font-style: var(--font-style-text);
+    font-weight: var(--font-weight-text);
 }
 
 a:link,

@@ -1,4 +1,4 @@
-import { cl, initCart, triggerMovement, myInterval, updateProgress, download } from "./helpers/helpers.js";
+import { cl, initCart, triggerMovement, myInterval, updateProgress, download } from "./resources/extensions.js";
 
 class Person {
     constructor(data) {

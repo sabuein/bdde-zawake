@@ -81,6 +81,10 @@
     width: 100%;
     gap: 3rem;
     cursor: grab;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    transition: -webkit-transform 200ms ease 0s; /* To delete */
+
 }
 
 .shelf-content:active {

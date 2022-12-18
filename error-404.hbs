@@ -1,0 +1,17 @@
+{{!< default}}
+<section class="error-content">
+    <header class="error-message">
+        <h1 class="error-code">{{statusCode}}</h1>
+        <p class="error-description">{{message}}</p>
+        <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
+    </header>
+</section>
+<aside class="read-more-wrap">
+    {{#get "posts" include="authors" limit="3" as |more_posts|}}
+    {{#if more_posts}}
+    {{#foreach more_posts}}
+    {{> "post-card"}}
+    {{/foreach}}
+    {{/if}}
+    {{/get}}
+</aside>

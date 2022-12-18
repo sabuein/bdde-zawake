@@ -1,0 +1,13 @@
+<!-- services.hbs -->
+{{#post}}
+<article>
+    <header>
+        <h1>{{title}}</h1>
+    </header>
+    <section>{{content}}</section>
+    <footer>
+        <time class="page-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+        <div>{{tags prefix=" on "}}</div>
+    </footer>
+</article>
+{{/post}}

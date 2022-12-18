@@ -1,6 +1,6 @@
 # Bdde Zawake *i.e.* I demand sweets
 
-A Ghost theme for [Zawake][1] project, an e-commerce venture between a brother (myself) and his sister (Hanan).
+A Ghost theme for [Zawake][zawake] project, an e-commerce venture between a brother (myself) and his sister (Hanan).
 
 ## Testing theme compatibility with the latest version of Ghost...
 
@@ -88,6 +88,7 @@ Checking theme compatibility...
 
 ## Links
 
+- [GScan][gscan] – a free online tool to scan your Ghost theme
 - [google-webfonts-helper][fonts] – a hassle-free way to self-host Google fonts
 - [Icons8][icons8] – a free service provides icons, clipart illustrations, photos, and music
 - [All Emojis][emojis] – a freeCodeCamp's emoji list for copy and paste
@@ -100,7 +101,8 @@ Peace and love,
 
 Salah.
 
-[1]: https://zawake.com/ "زواكي - حلويات من المطبخ إلى الفم مباشرة"
+[zawake]: https://zawake.com/ "زواكي - حلويات من المطبخ إلى الفم مباشرة"
 [fonts]: https://gwfh.mranftl.com/fonts "google webfonts helper"
 [icons8]: https://icons8.com/ "Free Icons, Clipart Illustrations, Photos, and Music"
 [emojis]: https://www.freecodecamp.org/news/all-emojis-emoji-list-for-copy-and-paste/ "All Emojis – Emoji List for Copy and Paste"
+[gscan]: https://gscan.ghost.org/ "The official tool to test your Ghost theme from Ghost.org"

@@ -3,7 +3,7 @@
 {{#get "posts" include="tags,authors" filter="primary_tag:{{section}}" limit="all" as |post|}}
 <article class="shelf-content flex row nowrap align-content-center align-items-center">
     {{#foreach post}}
-    <article class="shelf-item" title="{{title}}">
+    <article class="shelf-item" aria-label="{{title}}" title="{{title}}">
         <figure class="item-figure" title="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"><img src="{{img_url feature_image}}" class="item-img" alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}" /></figure>
         <header class="item-title"><h3><a href="{{url}}" title="{{title}}" target="_self">{{title}}</a></h3></header>
         <div class="item-cta">{{> "item-button" item_price=tags.[1].slug}}</div>

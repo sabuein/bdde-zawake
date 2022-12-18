@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sabuein/bddezawake.git"
+    "url": "https://github.com/sabuein/bdde-zawake.git"
   },
   "bugs": {
-    "url": "https://github.com/sabuein/bddezawake/issues"
+    "url": "https://github.com/sabuein/bdde-zawake/issues"
   },
-  "readme": "https://github.com/sabuein/bddezawake#readme",
+  "readme": "https://github.com/sabuein/bdde-zawake#readme",
   "screenshots": {
     "desktop": "assets/screenshot-desktop.jpg",
     "mobile": "assets/screenshot-mobile.jpg"
